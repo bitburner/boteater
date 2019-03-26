@@ -6,7 +6,7 @@ function doPost(request) {
   if (params.token == "<webhook-token>") {
 
     // PROCESS TEXT FROM MESSAGE
-    var textRaw = String(params.text).replace(/^\s*!reportabot\s*:*\s*/gi,'');
+    var textRaw = String(params.text).replace(/^\s*!boteater\s*:*\s*/gi,'');
     var text = textRaw.split(/\s*;\s*/g);
 
     // FALL BACK TO DEFAULT TEXT IF NO UPDATE PROVIDED
