@@ -26,3 +26,7 @@ Boteater is a Webhooks based slackbot that lets you submit twitter account names
 -	Now you can “publish” the webapp to be used with your webhooks in slack.
 -	Go to “publish” menu and “Deploy as web app...” save the URL to the web app as we will need to put that in IncomingWebhooks settings in slack
 -	One you have this published and your webhooks setup it should be working. If you have problems check the permissions on the app (should be open to everyone) and make sure the settings in the script are pointing to proper channels in your slack with “var channel general” in code.gs
+
+## How to use
+- In Slack webhooks settings use "!boteater" as the text command
+- In channel specified to listen for webhook command type "!boteater accountname" where accountname is what will be added to speadsheet as twitter account name.
